@@ -1,4 +1,4 @@
-WmsE3PHPoUZ55ECCbsqCvC7qyKL8D3rPFYqwpFTtn6twQ9NbUUq3vFm6ogbVjPTWm787HbSyzZJQRb4rsUffpb2R1L8QWJJey<html>
+<html>
 
 <!--
 
@@ -4097,7 +4097,7 @@ var QRCode;!function(){function a(a){this.mode=c.MODE_8BIT_BYTE,this.data=a,this
     <div class="container">
         <div class="row mt-3">
             <div class="col-12">
-                <div class="alert alert-danger important">Please be aware that there is no way to recover your funds if you lose your wallet keys. With the curreent wallet implementation, you MUST have the restore key to recover your funds.</div>
+                <div class="alert alert-danger important">Please be aware that there is no way to recover your funds if you lose your wallet keys. You MUST have the view/spend keys to recover your funds.</div>
             </div>
         </div>
     </div>
@@ -4173,11 +4173,11 @@ var QRCode;!function(){function a(a){this.mode=c.MODE_8BIT_BYTE,this.data=a,this
                     <div class="card-body">
                         <h2 class="card-title">Your pennykoin wallet is ready</h2>
                         <p><strong>To safeguard this wallet</strong> it is important to print (or save) the pdf and store it in a safe location.</p>
-                        <p>Remember to keep your printed wallet in a zip lock bag to keep it safe from water.</p>
+                        <p>Remember to keep your printed wallet in a zip lock bag or laminate it to keep it safe from water.</p>
                         <p>Treat this paper wallet like cash</p>
                         <p><small>If you leave/refresh the site or press the "Generate New Address" button then a new wallet will be generated and the previously wallet will not be retrievable.</small></p>
                         <p><small>Your pennykoin PRIVATE SPEND key should be kept a secret. Whomever you share the PRIVATE SPEND key with has access to spend all the pennykoin associated with that address.</small></p>
-                        <p><small>This site DOES NOT have knowledge of your PRIVATE SPEND key, but you should ideally run this page in a private (incognito) tab with browser extensions turned off. </small></p>
+                        <p><small>This site DOES NOT have knowledge of your PRIVATE SPEND key, but you should ideally run this page in a private (incognito) tab with browser extensions turned off. You can run this page on a computer without internet access for an extra layer of security </small></p>
                         <div class="row card-action">
                             <div class="col-12">
                                 <div class="text-right">
@@ -4789,7 +4789,7 @@ function creatWalletPdf() {
     }
 
     // background color
-    doc.setFillColor(9, 27, 38);
+    doc.setFillColor(251, 240, 149);
     doc.rect(0, 0, 297, 210, "F");
 
     // logo 
@@ -4813,9 +4813,9 @@ function creatWalletPdf() {
 
     // BOX 1 [x = 5, y = 10]
     doc.setFillColor(255, 255, 255);
-    doc.setDrawColor(35, 190, 226);
+    doc.setDrawColor(249, 220, 61);
     doc.rect(5, 5, 90, 90, "F");
-    doc.setFillColor(35, 190, 226);
+    doc.setFillColor(249, 220, 61);
     doc.rect(5, 75, 90, 15, "F");
     doc.setTextColor(255, 255, 255);
     doc.setFontSize(38);
@@ -4831,9 +4831,9 @@ function creatWalletPdf() {
     
     // BOX 2 - [x = 104, y = 10]
     doc.setFillColor(255, 255, 255);
-    doc.setDrawColor(35, 190, 226);
+    doc.setDrawColor(249, 220, 61);
     doc.rect(104, 5, 90, 90, "F");
-    doc.setFillColor(35, 190, 226);
+    doc.setFillColor(249, 220, 61);
     doc.rect(104, 75, 90, 15, "F");
     doc.setTextColor(255, 255, 255);
     doc.setFontSize(38);
@@ -4849,7 +4849,7 @@ function creatWalletPdf() {
 
     // BOX 3 - [x = 203, y = 10]
     doc.setFillColor(255, 255, 255);
-    doc.setDrawColor(35, 190, 226);
+    doc.setDrawColor(249, 220, 61);
 
 
 
@@ -4857,9 +4857,9 @@ function creatWalletPdf() {
 
     // BOX 4 - [x = 0, y = 100]
     doc.setFillColor(255, 255, 255);
-    doc.setDrawColor(35, 190, 226);
+    doc.setDrawColor(249, 220, 61);
     doc.rect(5, 115, 90, 90, "F");
-    doc.setFillColor(35, 190, 226);
+    doc.setFillColor(249, 220, 61);
     doc.rect(5, 120, 90, 15, "F");
     doc.setTextColor(255, 255, 255);
     doc.setFontSize(38);
@@ -4875,7 +4875,7 @@ function creatWalletPdf() {
 
 
     // BOX 5 - [x = 104, y = 110]
-    doc.setFillColor(35, 190, 226);
+    doc.setFillColor(249, 220, 61);
     doc.roundedRect(104, 115, 89, 85, 2, 2, 'F');
     doc.setFontSize(10)
     doc.setTextColor(255, 255, 255)
