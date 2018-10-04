@@ -4895,7 +4895,12 @@ function creatWalletPdf() {
 
     
     // BOX 6 - [x = 180, y = 180]
-    doc.addImage(logo, 'PNG', 208, 135, 80, 36.44);
+    doc.setTextColor(255, 255, 255);
+    doc.setFontSize(34);
+    doc.text('Happy Halloween', 201, 132, null, 0);
+    doc.addImage(logo, 'PNG', 208, 154, 80, 36.44);
+    doc.setFontSize(22);
+    doc.text('https://pennykoin.com', 214, 207, null, 0);
 
     
     
